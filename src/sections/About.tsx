@@ -1,16 +1,37 @@
 "use client";
 import SectionHeader from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import StarIcon from "@/assets/icons/star.svg";
 import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
-import JavascriptIcon from "@/assets/icons/square-js.svg";
+
+//front-end svg
 import HTMLIcon from "@/assets/icons/html5.svg";
 import CSSIcon from "@/assets/icons/css3.svg";
+import JavascriptIcon from "@/assets/icons/square-js.svg";
+import TypescriptIcon from "@/assets/icons/typescript.svg";
 import ReactIcon from "@/assets/icons/react.svg";
-import ChromeIcon from "@/assets/icons/chrome.svg";
-import GithubIcon from "@/assets/icons/github.svg";
-import TechIcon from "@/components/TechIcon";
+import NextjsIcon from "@/assets/icons/next-js.svg";
+
+//mobile app svg
+import AndroidIcon from "@/assets/icons/android.svg";
+import AppleIcon from "@/assets/icons/apple.svg";
+import FlutterIcon from "@/assets/icons/flutter.svg";
+
+//backend svg
+import NodejsIcon from "@/assets/icons/nodejs.svg";
+import PhpIcon from "@/assets/icons/php.svg";
+import pythonIcon from "@/assets/icons/python.svg";
+
+//database svg
+import MysqlIcon from "@/assets/icons/mysql.svg";
+import MongodbIcon from "@/assets/icons/mongodb.svg";
+import PostgresqlIcon from "@/assets/icons/postgresql.svg";
+
+//other
+import ShopifyIcon from "@/assets/icons/shopify.svg";
+import WordpressIcon from "@/assets/icons/wordpress-svgrepo-com.svg";
+import UiUxIcon from "@/assets/icons/ui-ux.svg";
+
 import mapImage from "@/assets/images/map.png";
 import smileImage from "@/assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
@@ -19,10 +40,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 
 const toolboxItems = [
-  {
-    title: 'JavaScript',
-    iconType: JavascriptIcon
-  },
+  //front end
   {
     title: 'HTML5',
     iconType: HTMLIcon
@@ -32,18 +50,82 @@ const toolboxItems = [
     iconType: CSSIcon
   },
   {
+    title: 'Javascript',
+    iconType: JavascriptIcon
+  },
+  {
+    title: 'Typescript',
+    iconType: TypescriptIcon
+  },
+  {
     title: 'React',
     iconType: ReactIcon
   },
   {
-    title: 'Chrome',
-    iconType: ChromeIcon
+    title: 'Next js',
+    iconType: NextjsIcon
+  },
+
+  //mobile app
+  {
+    title: 'Android',
+    iconType: AndroidIcon
   },
   {
-    title: 'Github',
-    iconType: GithubIcon
+    title: 'Apple',
+    iconType: AppleIcon
   },
-]
+  {
+    title: 'Flutter',
+    iconType: FlutterIcon
+  },
+  {
+    title: 'React Native',
+    iconType: ReactIcon
+  },
+
+  //backend
+  {
+    title: 'Node js',
+    iconType: NodejsIcon
+  },
+  {
+    title: 'Python',
+    iconType: pythonIcon
+  },
+  {
+    title: 'Php',
+    iconType: PhpIcon
+  },
+
+  //database
+  {
+    title: 'Mysql',
+    iconType: MysqlIcon
+  },
+  {
+    title: 'Mongodb',
+    iconType: MongodbIcon
+  },
+  {
+    title: 'Postgresql',
+    iconType: PostgresqlIcon
+  },
+  
+  //other
+  {
+    title: 'Shopify',
+    iconType: ShopifyIcon
+  },
+  {
+    title: 'WOrdpress',
+    iconType: WordpressIcon
+  },
+  {
+    title: 'UI/UX',
+    iconType: UiUxIcon
+  },
+] 
 
 const hobbies = [
   {
