@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Mail, User, MessageCircle } from "lucide-react";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import SectionHeader from "@/components/SectionHeader";
@@ -42,32 +43,43 @@ const ContactUs = () => {
           <div className="absolute"></div>
           <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your Name"
-              className="w-full p-3 bg-white/10 border border-white/20 rounded-xl placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-emerald-400"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              value={formData.email} 
-              onChange={handleChange}
-              placeholder="Your Email"
-              className="w-full p-3 bg-white/10 border border-white/20 rounded-xl placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-emerald-400"
-              required
-            />
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Your Message"
-              className="w-full p-3 bg-white/10 border border-white/20 rounded-xl placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-emerald-400"
-              required
-            ></textarea>
+            <div className="relative">
+              <User className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                className="w-full p-3 pl-12 bg-white/10 border border-white/20 rounded-xl placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                required
+              />
+            </div>
+
+            <div className="relative">
+              <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Your Email"
+                className="w-full p-3 pl-12 bg-white/10 border border-white/20 rounded-xl placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                required
+              />
+            </div>
+
+            <div className="relative">
+              <MessageCircle className="absolute left-4 top-6 transform -translate-y-1/2 text-white/50" />
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Your Message"
+                className="w-full p-3 pl-12 bg-white/10 border border-white/20 rounded-xl placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+                required
+              ></textarea>
+            </div>
             <button
               type="submit"
               className="w-full py-3 bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 rounded-xl font-semibold transition-all duration-300 hover:from-emerald-400 hover:to-sky-500 hover:brightness-110 hover:scale-105"
