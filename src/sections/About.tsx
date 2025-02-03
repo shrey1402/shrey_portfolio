@@ -29,7 +29,7 @@ import PostgresqlIcon from "@/assets/icons/postgresql.svg";
 
 //other
 import ShopifyIcon from "@/assets/icons/shopify.svg";
-import WordpressIcon from "@/assets/icons/wordpress-svgrepo-com.svg";
+import WordpressIcon from "@/assets/icons/wordpress.svg";
 import UiUxIcon from "@/assets/icons/ui-ux.svg";
 
 import mapImage from "@/assets/images/map.png";
