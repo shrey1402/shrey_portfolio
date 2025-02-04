@@ -21,3 +21,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+button {
+  position: relative;
+  z-index: 99;
+  pointer-events: auto !important;
+}
+
