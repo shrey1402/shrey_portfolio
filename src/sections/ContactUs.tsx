@@ -39,9 +39,9 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="relative py-16 px-6 rounded-2xl flex flex-col mx-auto text-white mt-10">
+        <div className="relative py-16 rounded-2xl flex flex-col mx-auto text-white mt-10">
           <div className="absolute"></div>
-          <h2 className="text-3xl font-bold text-center mb-6">Contact Us</h2>
+          <h2 className="font-serif text-2xl md:text-3xl text-center mb-12 lg:mb-18">Drop Me a Message</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="relative">
               <User className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
