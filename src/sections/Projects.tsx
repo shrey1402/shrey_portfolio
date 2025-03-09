@@ -1,11 +1,13 @@
-import eCommercePage from "@/assets/images/Designer (4).png";
-import project1 from "@/assets/images/project1.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
+import project1 from "@/assets/images/project_1.png";
+import project2 from "@/assets/images/project_2.png";
+import project3 from "@/assets/images/project_3.png";
+import project4 from "@/assets/images/project_4.png";
+import project5 from "@/assets/images/project_5.png";
+import project6 from "@/assets/images/project_6.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
-import grainImage from "@/assets/images/grain.jpg"
 import SectionHeader from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
@@ -13,38 +15,74 @@ const portfolioProjects = [
   {
     company: "Acme Corp",
     year: "2022",
-    title: "E commerce",
+    title: "The Sposa Group",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: eCommercePage,
+    link: "https://thesposagroup.com.au/",
+    image: project1,
   },
   {
     company: "Innovative Co",
     year: "2021",
-    title: "Light Saas Landing Page",
+    title: "LSG Legal",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: project1,
+    link: "https://lsglegalapc.com/",
+    image: project2,
   },
   {
     company: "Quantum Dynamics",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Exocet Game",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://exocetgame.com/",
+    image: project3,
+  },
+  {
+    company: "Quantum Dynamics",
+    year: "2023",
+    title: "Everyone Thailand",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://everyonethailand.com/",
+    image: project4,
+  },
+  {
+    company: "Quantum Dynamics",
+    year: "2023",
+    title: "Titan Finance",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://titanfinance.hollybollygossip.com/",
+    image: project5,
+  },
+  {
+    company: "Quantum Dynamics",
+    year: "2023",
+    title: "Captain Tractor Susa",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://captaintractorsusa.com/",
+    image: project6,
   },
 ];
 
@@ -57,17 +95,17 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb-0 md:px-12 md:pt-10 lg:pt-16 lg:px-20 sticky"
+              className="px-8 pt-1 pb-0 md:px-12 md:pt-2 lg:pt-7 lg:px-20 sticky"
               style={{ top: `calc(64px + ${projectIndex * 40}px` }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
-                    <span>{project.company}</span>
+                    {/* <span>{project.company}</span>
                     <span>&bull;</span>
-                    <span>{project.year}</span>
+                    <span>{project.year}</span> */}
+                    <h3 className="font-serif text-2xl mt-2 md:mt-5">{project.title}</h3>
                   </div>
-                  <h3 className="font-serif text-2xl mt-2 md:mt-5">{project.title}</h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (
