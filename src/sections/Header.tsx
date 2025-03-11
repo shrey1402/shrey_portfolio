@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import memojiImage from "@/assets/images/memoji-computer.png";
+import memojiImage from "@/assets/images/main_logo.png";
 
 export const Header = () => {
   const [activeSection, setActiveSection] = useState<string>("home");
@@ -42,9 +42,9 @@ export const Header = () => {
 
   return (
     <>
-      <div className="absolute md:left-14 left-1/2 -translate-x-1/2 z-50">
-        <Image src={memojiImage} alt="Logo" className="w-16 h-auto" />
-      </div>
+      {/* <div id="home" className="absolute md:left-20 top-2 left-1/2 -translate-x-1/2 z-50">
+        <Image src={memojiImage} alt="Logo" className="size-18 w-44" />
+      </div> */}
 
       <div
         className={`flex justify-center items-center relative top-3 z-10 sticky transition-opacity duration-300
